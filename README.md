@@ -2,14 +2,12 @@ PyGetSubtitle
 =============
 
 
-----------
-
 
 Introduction 简介
 ----------------
 
 Download subtitles using the API supplied by [Shooter.cn](https://docs.google.com/document/d/1ufdzy6jbornkXxsD-OGl3kgWa4P9WO5NZb6_QYZiGI0/preview) and [thesubdb.com](http://thesubdb.com/api/) after selecting specified video files.
-选中对应的视频文件，通过[射手网](https://docs.google.com/document/d/1ufdzy6jbornkXxsD-OGl3kgWa4P9WO5NZb6_QYZiGI0/preview)和[thesubdb.com](http://thesubdb.com/api/)提供的API下载对于的字幕文件.
+选中对应的视频文件，通过[射手网](https://docs.google.com/document/d/1ufdzy6jbornkXxsD-OGl3kgWa4P9WO5NZb6_QYZiGI0/preview)和[thesubdb.com](http://thesubdb.com/api/)提供的API下载对应的字幕文件.
 
 * This script search from Shooter.cn database first. If no subtitles were found, then try thesubdb.com. As thesubdb.com seems do not contain much entries
 * It will download all subtitles found on shooter.cn,starting with a trailing number from 1
@@ -27,10 +25,11 @@ Download subtitles using the API supplied by [Shooter.cn](https://docs.google.co
 How to Use 如何使用
 ------------------
 
-Now only supports Windows, will add Mac OS X support
+Now only supports Windows, will add Mac OS X support.
+
 暂时只支持Windows，Mac OS X待续
 
-Actually you could execute this script from CommandLine or Terminal directly. Ignore if you do not understand
+Actually you could execute this script from CommandLine or Terminal directly. Ignore if you do not understand.
 其实你可以直接从命令行或者终端中执行此Python脚本。不知所云的同学请自动忽略
 
 
@@ -40,15 +39,15 @@ Actually you could execute this script from CommandLine or Terminal directly. Ig
 #### Windows 7
 
 * Install Python 安装Python:
-  * Download from https://www.python.org/downloads/ and you'd better choose Python2.7 as I did not test on Python3, although I wrote the compatability code
-  * 从https://www.python.org/downloads/下载， 最好选择Python2.7。因为虽然考虑了Python3，但是没有做过测试，不保证可以使用
+  * Download from https://www.python.org/downloads/ and you'd better choose Python2.7 as I did not test on Python3, although I wrote the compatability code.
+  * 从https://www.python.org/downloads/ 下载， 最好选择Python2.7。因为虽然考虑了Python3，但是没有做过测试，不保证可以使用
 
 * Modify `PyGetSubtitle.bat` 修改`PyGetSubtitle.bat`
-  * Change Line 6 to your own path： 
+  * Change Line 7 to your own path：
       * First one is your absolute path to `python` executable after installed Python
       * Second one is your absolute path to `PyGetSubtitle.py`
       * N.b. The absolute path should contain ascii characters only 
-  * 修改第六行的路径为你对应的路径:
+  * 修改第七行的路径为你对应的路径:
       * 前一个是你安装完Python后，存放`python.exe`的路径
       * 后一个是你放·PyGetSubtitle.py`的路径
       * 注意：这两个路径里面最好不要包含非英文字符
