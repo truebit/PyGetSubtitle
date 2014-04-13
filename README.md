@@ -64,5 +64,7 @@ Actually you could execute this script from CommandLine or Terminal directly. Ig
     * 选择一个或多个视频文件，点击鼠标右键，选择“发送到”，选择`PyGetSubtitle.bat`
     * 大功告成
 
+* Gif demo： gif动画演示：
+![DemoGif](./PyGetSubtitle.gif?raw=true)
 
 ----------
