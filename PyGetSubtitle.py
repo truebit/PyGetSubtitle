@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 """@author: Sean Wang
-   @weibo: http://weibo.com/fclef
+   @website: http://fclef.wordpress.com/about
 """
 from __future__ import unicode_literals
 from os.path import getsize, splitext, basename

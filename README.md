@@ -1,5 +1,8 @@
 PyGetSubtitle
 =============
+_Released under the [GNU General Public License version 3](https://www.gnu.org/copyleft/gpl.html) by [SeganW](http://fclef.wordpress.com/about)_
+
+_本软件由[SeganW](http://fclef.wordpress.com/about)开发，遵循[GPL V3](https://www.gnu.org/copyleft/gpl.html)协议_
 
 
 
