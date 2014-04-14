@@ -65,6 +65,6 @@ Actually you could execute this script from CommandLine or Terminal directly. Ig
     * 大功告成
 
 * Gif demo： gif动画演示：
-![DemoGif](./PyGetSubtitle.gif?raw=true)
+![DemoGif](https://raw.github.com/truebit/PyGetSubtitle/gif/PyGetSubtitle_Win.gif)
 
 ----------
