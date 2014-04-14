@@ -8,6 +8,7 @@ from os.path import getsize, splitext, basename
 from hashlib import md5 as hashlib_md5
 from json import loads as json_loads
 from sys import argv, getfilesystemencoding
+from platform import system
 #Python3 support
 try:
     from urllib.request import Request, urlopen, urlretrieve
@@ -17,7 +18,6 @@ except ImportError:
     from urllib2 import Request, urlopen, HTTPError
     from urllib import urlencode, urlretrieve
 
-VIDEO_TYPES = (".avi", ".mp4", ".mkv", ".mpg", ".mpeg")
 SHOOTER_URL = 'http://shooter.cn/api/subapi.php'
 SUBDB_URL = lambda hash: "http://api.thesubdb.com/?action=download&hash={}&language=en".format(hash)
 PGS_UA = {'User-Agent': "SubDB/1.0 (PyGetSubTitle/0.1; http://github.com/truebit/PyGetSubtitle)"}
@@ -37,7 +37,7 @@ def shooter_hash(file_path):
     "see https://docs.google.com/document/d/1w5MCBO61rKQ6hI5m9laJLWse__yTYdRugpVyz4RzrmM/preview"
     f_size = getsize(file_path)
     if f_size < 8196:
-        print '文件太小了……你确定选中的是视频文件么……'
+        print '文件太小了……你确定选中的是视频文件么……'.encode(getfilesystemencoding())
         return None
     with open(file_path, 'rb') as f:
         f_size_3rd = int(f_size / 3)
@@ -67,7 +67,7 @@ def shooter_downloader(file_path):
     try:
         r_json = json_loads(resp)
     except:
-        print '射手网没有找到字幕'
+        print '射手网没有找到字幕'.encode(getfilesystemencoding())
         return False
     else:
         f_name, file_extension = splitext(file_path)
@@ -78,15 +78,15 @@ def shooter_downloader(file_path):
                 if f_info['Ext'] not in ('sub', 'idx'):
                     result.append((f_info['Link'], f_info['Ext']))
         if len(result) < 1:
-            print '射手网没有找到字幕'
+            print '射手网没有找到字幕'.encode(getfilesystemencoding())
             return False
         elif len(result) == 1:
             urlretrieve(result[0][0], filename='{}.{}'.format(f_name, result[0][1]))
-            print '字幕下载完成'
+            print '字幕下载完成'.encode(getfilesystemencoding())
         else:
             for idx, value in enumerate(result):
                 urlretrieve(value[0], filename='{}_{}.{}'.format(f_name, idx + 1, value[1]))
-                print '第{}个字幕下载完成'.format(idx + 1)
+                print '第{}个字幕下载完成'.format(idx + 1).encode(getfilesystemencoding())
         return True
 
 
@@ -116,5 +116,14 @@ def main(path):
 
 
 if __name__ == "__main__":
-    fp = argv[1].decode(getfilesystemencoding())
-    main(fp)
+    if 'darwin' in system().lower():
+        for arg in argv[1:]:
+            try:
+                main(arg)
+            except:
+                from traceback import print_exc
+                from sys import stdout
+                print_exc(file=stdout)
+    else:
+        fp = argv[1].decode(getfilesystemencoding())
+        main(fp)
