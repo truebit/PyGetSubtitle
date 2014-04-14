@@ -31,25 +31,25 @@ How to Use 如何使用
 
 `PyGetSubtitle` supports both Windows and Mac OS X. You could watch below demo to know how it works:
 
-* [Windows demo](#demo-on-Windows-动画演示)
-* [Mac OS X demo](#demo-on-MacOSX-动画演示)
+* [Windows demo](#demo-on-windows-动画演示)
+* [Mac OS X demo](#demo-on-macosx-动画演示)
 
 For more details, please check the detailed step-by-step guide:
 
-* [Windows](#Windows-7)
-* [Mac OS X](#Mac-OS-X)
+* [Windows](#windows-7)
+* [Mac OS X](#mac-os-x)
 
 ----------
 
 `PyGetSubtitle`同时支持Windows和Mac OS X。可以观看以下动画了解操作过程：
 
-* [Windows版本](#demo-on-Windows-动画演示)
-* [Mac OS X版本](#demo-on-MacOSX-动画演示)
+* [Windows版本](#demo-on-windows-动画演示)
+* [Mac OS X版本](#demo-on-macosx-动画演示)
 
 详细安装和使用方式请看下面的详细步骤：
 
-* [Windows](#Windows-7)
-* [Mac OS X](#Mac-OS-X)
+* [Windows](#windows-7)
+* [Mac OS X](#mac-os-x)
 
 
 ----------
