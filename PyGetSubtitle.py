@@ -1,8 +1,24 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
-"""@author: Sean Wang
-   @website: http://fclef.wordpress.com/about
 """
+PyGetSubtitle: download subtitles according to a video file with right click
+
+Copyright (C) 2014 SeganW(http://fclef.wordpress.com/about)
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+"""
+
 from __future__ import unicode_literals
 from os.path import getsize, splitext, basename
 from hashlib import md5 as hashlib_md5
