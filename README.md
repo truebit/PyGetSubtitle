@@ -64,26 +64,16 @@ For more details, please check the detailed step-by-step guide:
   * Download from https://www.python.org/downloads/ and you'd better choose Python2.7 as I did not test on Python3, although I wrote the compatability code.
   * 从https://www.python.org/downloads/ 下载， 最好选择Python2.7。因为虽然考虑了Python3，但是没有做过测试，不保证可以使用
 
-* Modify `PyGetSubtitle.bat` 修改`PyGetSubtitle.bat`
-  * Change Line 7 to your own path：
-      * First one is your absolute path to `python` executable after installed Python
-      * Second one is your absolute path to `PyGetSubtitle.py`
-      * N.b. The absolute path should contain ascii characters only 
-  * 修改第七行的路径为你对应的路径:
-      * 前一个是你安装完Python后，存放`python.exe`的路径
-      * 后一个是你放·PyGetSubtitle.py`的路径
-      * 注意：这两个路径里面最好不要包含非英文字符
-
-* Put `PyGetSubtitle.bat` file to `SendTo...` 把PyGetSubtitle.bat文件放到“发送到... ”中
+* Put `PyGetSubtitle.py` file to `SendTo...` 把PyGetSubtitle.py文件放到“发送到... ”中
   * input ·shell:sendto` in searchbar after hit Windows key, and press Enter key to enter "SendTo" directory
-  * copy the modified `PyGetSubtitle.bat` to the directory
+  * copy the `PyGetSubtitle.py` to the directory
   * 按Windows键，在搜索框中输入`shell:sendto`,按回车后进入“SendTo”文件夹
-  * 把 修改好的`PyGetSubtitle.bat`文件复制到这个文件夹中
+  * 把 `PyGetSubtitle.py`文件复制到这个文件夹中
 
 * Use it! 开始使用
-    * Select one or more video files and click right mouse, hover on `send to` and then choose `PyGetSubtitle.bat`.
+    * Select one or more video files and click right mouse, hover on `send to` and then choose `PyGetSubtitle.py`.
     * Enjoy~
-    * 选择一个或多个视频文件，点击鼠标右键，选择“发送到”，选择`PyGetSubtitle.bat`
+    * 选择一个或多个视频文件，点击鼠标右键，选择“发送到”，选择`PyGetSubtitle.py`
     * 大功告成
 
 ##### demo on Windows 动画演示
