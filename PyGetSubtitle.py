@@ -132,14 +132,10 @@ def main(path):
 
 
 if __name__ == "__main__":
-    if 'darwin' in system().lower():
-        for arg in argv[1:]:
-            try:
-                main(arg)
-            except:
-                from traceback import print_exc
-                from sys import stdout
-                print_exc(file=stdout)
-    else:
-        fp = argv[1].decode(getfilesystemencoding())
-        main(fp)
+    for arg in argv[1:]:
+        try:
+            main(arg)
+        except:
+            from traceback import print_exc
+            from sys import stdout
+            print_exc(file=stdout)
