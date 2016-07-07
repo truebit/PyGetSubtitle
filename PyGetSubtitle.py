@@ -124,6 +124,7 @@ def subdb_downloader(file_path):
 
 
 def main(path):
+    path = path.decode(getfilesystemencoding())
     status = shooter_downloader(path)
     if status:
         return
